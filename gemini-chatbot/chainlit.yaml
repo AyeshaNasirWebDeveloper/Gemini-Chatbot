@@ -1,0 +1,22 @@
+chainlit: 2.0.0
+
+# App Metadata Or User Interface
+ui:
+  name: "My Chatbot"
+  description: "A helpful AI assistant."
+  icon: "🤖" 
+
+# Message Settings
+default_expand_messages: true
+
+# Authentication 
+auth:
+  required: true
+  providers: 
+    - github
+ 
+# OAuth Configuration
+oauth_providers:
+  github:
+    client_id: ${OAUTH_GITHUB_CLIENT_ID}
+    client_secret: ${OAUTH_GITHUB_CLIENT_SECRET}
